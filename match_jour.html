@@ -1,0 +1,200 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Matchs du jour</title>
+    <style>
+    
+        h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #4caf50;
+        }
+    
+        /* Conteneur pour afficher plusieurs championnats côte à côte */
+        .champ-container {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+    
+        .match-block {
+            background: #FDF4FF;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #4caf50;
+        }
+        
+        .champ {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #4caf50;
+        }
+        
+        .match-line {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .heure {
+            font-weight: bold;
+            margin-right: 10px;
+            color: #292524;
+        }
+        
+        .teams strong {
+            color: #E7180B;
+        }
+        
+        .stade {
+            font-size: 14px;
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+    
+    </style>
+    </head>
+    <body>
+    
+    <h1>Matchs du jour</h1>
+    
+    <div class="champ-container">
+    
+        <div class="match-block">
+            <div class="champ">Africa Cup of Nations</div>
+        
+            <div class="match-line">
+                <span class="heure">17:00</span>
+                <span class="teams">Zimbabwe <strong>vs</strong> South Africa</span>
+            </div>
+            <div class="stade">Grand Stade de Marrakech (Neutral Site)</div>
+            
+            <div class="match-line">
+                <span class="heure">17:00</span>
+                <span class="teams">Angola <strong>vs</strong> Egypt</span>
+            </div>
+            <div class="stade">Grand Stade d'Agadir (Neutral Site)</div>
+            
+            <div class="match-line">
+                <span class="heure">20:00</span>
+                <span class="teams">Comoros <strong>vs</strong> Mali</span>
+            </div>
+            <div class="stade">Stade Mohamed V (Neutral Site)</div>
+            
+            <div class="match-line">
+                <span class="heure">20:00</span>
+                <span class="teams">Zambia <strong>vs</strong> Morocco</span>
+            </div>
+            <div class="stade">Stade Prince Moulay Abdallah (Neutral Site)</div>
+            </div>
+        <div class="match-block">
+            <div class="champ">Championship</div>
+        
+            <div class="match-line">
+                <span class="heure">18:00</span>
+                <span class="teams">Coventry City <strong>vs</strong> Ipswich Town</span>
+            </div>
+            <div class="stade">Coventry Building Society Arena</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Norwich City <strong>vs</strong> Watford</span>
+            </div>
+            <div class="stade">Carrow Road</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">West Brom <strong>vs</strong> QPR</span>
+            </div>
+            <div class="stade">The Hawthorns</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Wrexham <strong>vs</strong> Preston</span>
+            </div>
+            <div class="stade">SToK Racecourse</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Middlesbrough <strong>vs</strong> Hull City</span>
+            </div>
+            <div class="stade">Riverside Stadium</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Portsmouth <strong>vs</strong> Charlton Ath</span>
+            </div>
+            <div class="stade">Fratton Park</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Leicester City <strong>vs</strong> Derby County</span>
+            </div>
+            <div class="stade">King Power Stadium</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Oxford United <strong>vs</strong> Swansea City</span>
+            </div>
+            <div class="stade">The Kassam Stadium</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Sheffield Weds <strong>vs</strong> Blackburn</span>
+            </div>
+            <div class="stade">Hillsborough Stadium</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Millwall <strong>vs</strong> Bristol City</span>
+            </div>
+            <div class="stade">The Den</div>
+            
+            <div class="match-line">
+                <span class="heure">19:45</span>
+                <span class="teams">Stoke City <strong>vs</strong> Sheffield Utd</span>
+            </div>
+            <div class="stade">bet365 Stadium</div>
+            
+            <div class="match-line">
+                <span class="heure">20:15</span>
+                <span class="teams">Birmingham City <strong>vs</strong> Southampton</span>
+            </div>
+            <div class="stade">St Andrew's @ Knighthead Park</div>
+            </div>
+        <div class="match-block">
+            <div class="champ">Serie A</div>
+        
+            <div class="match-line">
+                <span class="heure">20:45</span>
+                <span class="teams">Roma <strong>vs</strong> Genoa</span>
+            </div>
+            <div class="stade">Stadio Olimpico</div>
+            </div>
+        <div class="match-block">
+            <div class="champ">A-League Men</div>
+        
+            <div class="match-line">
+                <span class="heure">19:00</span>
+                <span class="teams">Melb Victory <strong>vs</strong> Wellington</span>
+            </div>
+            <div class="stade">AAMI Park</div>
+            </div>
+        <div class="match-block">
+            <div class="champ">Primeira Liga</div>
+        
+            <div class="match-line">
+                <span class="heure">20:15</span>
+                <span class="teams">Porto <strong>vs</strong> AVS Futebol</span>
+            </div>
+            <div class="stade">Estadio do Dragao</div>
+            </div>
+    </div> <!-- fin champ-container -->
+    
+    </body>
+    </html>
+    
