@@ -3,147 +3,308 @@
     <html>
     <head>
     <meta charset="UTF-8">
-    <title>🏆  Classement Ligue1</title>
+    <title>🏆  Classement Ligue 1</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #111;
+            background: #1a1a1a;
             color: #fff;
             padding: 20px;
         }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .team {
-            padding: 10px;
+    
+        .row {
+            display: grid;
+            grid-template-columns: 100px 250px 100px 100px 100px 100px 100px 100px 100px 100px;
+            padding: 8px 0;
             border-bottom: 1px solid #333;
-            display: flex;
-            justify-content: space-between;
+            font-size: 14px;
             align-items: center;
         }
-        .rank {
+    
+        .header {
             font-weight: bold;
-            width: 40px;
+            background: #222;
         }
-        .name {
-            flex-grow: 1;
+    
+        .pos {
+            font-weight: bold;
+            text-align: center;
         }
-        .points {
+    
+        .team {
             font-weight: bold;
         }
+    
+        .diff {
+            font-weight: bold;
+            color: #0f0;
+        }
+        
+        
+        .top-zone1  { background: rgba(0, 255, 0, 0.45); }
+        .top-zone2  { background: rgba(40, 240, 0, 0.45); }
+        .top-zone3  { background: rgba(120, 230, 0, 0.45); }
+        .top-zone4  { background: rgba(255, 230, 0, 0.45); }
+        .top-zone5  { background: rgba(255, 180, 0, 0.45); }
+        .top-zone6  { background: rgba(255, 130, 0, 0.45); }
+        .top-zone7  { background: rgba(255, 90, 0, 0.45); }
+        .top-zone8  { background: rgba(255, 50, 0, 0.45); }
+        .top-zone9  { background: rgba(255, 0, 0, 0.45); }
+        .top-zone10 { background: rgba(180, 0, 0, 0.45); }
+
+
+        
     </style>
     </head>
     <body>
     
-    <h1>🏆  Classement Ligue1</h1>
+    <h1>🏆  Classement Ligue 1</h1>
     
-        <div class="team">
-            <div class="rank">1.</div>
-            <div class="name">Paris S-G</div>
-            <div class="points">78 pts</div>
+    <div class="row header">
+        <div>Rang</div>
+        <div>Équipe</div>
+        <div>Pts</div>
+        <div>J</div>
+        <div>G</div>
+        <div>N</div>
+        <div>P</div>
+        <div>BP</div>
+        <div>BC</div>
+        <div>Diff</div>
+    </div>
+    
+        <div class="row top-zone1">
+            <div class="pos">1</div>
+            <div class="team">Lens</div>
+            <div>37</div>
+            <div>16</div>
+            <div>12</div>
+            <div>1</div>
+            <div>3</div>
+            <div>28</div>
+            <div>13</div>
+            <div>15</div>
         </div>
         
-        <div class="team">
-            <div class="rank">2.</div>
-            <div class="name">Marseille</div>
-            <div class="points">59 pts</div>
+        <div class="row top-zone1">
+            <div class="pos">2</div>
+            <div class="team">Paris S-G</div>
+            <div>36</div>
+            <div>16</div>
+            <div>11</div>
+            <div>3</div>
+            <div>2</div>
+            <div>35</div>
+            <div>14</div>
+            <div>21</div>
         </div>
         
-        <div class="team">
-            <div class="rank">3.</div>
-            <div class="name">Monaco</div>
-            <div class="points">58 pts</div>
+        <div class="row top-zone1">
+            <div class="pos">3</div>
+            <div class="team">Marseille</div>
+            <div>32</div>
+            <div>16</div>
+            <div>10</div>
+            <div>2</div>
+            <div>4</div>
+            <div>36</div>
+            <div>15</div>
+            <div>21</div>
         </div>
         
-        <div class="team">
-            <div class="rank">4.</div>
-            <div class="name">Nice</div>
-            <div class="points">57 pts</div>
+        <div class="row top-zone3">
+            <div class="pos">4</div>
+            <div class="team">Lille</div>
+            <div>32</div>
+            <div>16</div>
+            <div>10</div>
+            <div>2</div>
+            <div>4</div>
+            <div>33</div>
+            <div>20</div>
+            <div>13</div>
         </div>
         
-        <div class="team">
-            <div class="rank">5.</div>
-            <div class="name">Lille</div>
-            <div class="points">57 pts</div>
+        <div class="row top-zone4">
+            <div class="pos">5</div>
+            <div class="team">Lyon</div>
+            <div>27</div>
+            <div>16</div>
+            <div>8</div>
+            <div>3</div>
+            <div>5</div>
+            <div>22</div>
+            <div>16</div>
+            <div>6</div>
         </div>
         
-        <div class="team">
-            <div class="rank">6.</div>
-            <div class="name">Strasbourg</div>
-            <div class="points">57 pts</div>
+        <div class="row top-zone4">
+            <div class="pos">6</div>
+            <div class="team">Rennes</div>
+            <div>27</div>
+            <div>16</div>
+            <div>7</div>
+            <div>6</div>
+            <div>3</div>
+            <div>27</div>
+            <div>24</div>
+            <div>3</div>
         </div>
         
-        <div class="team">
-            <div class="rank">7.</div>
-            <div class="name">Lyon</div>
-            <div class="points">54 pts</div>
+        <div class="row top-zone5">
+            <div class="pos">7</div>
+            <div class="team">Strasbourg</div>
+            <div>23</div>
+            <div>16</div>
+            <div>7</div>
+            <div>2</div>
+            <div>7</div>
+            <div>25</div>
+            <div>20</div>
+            <div>5</div>
         </div>
         
-        <div class="team">
-            <div class="rank">8.</div>
-            <div class="name">Lens</div>
-            <div class="points">48 pts</div>
+        <div class="row ">
+            <div class="pos">8</div>
+            <div class="team">Toulouse</div>
+            <div>23</div>
+            <div>16</div>
+            <div>6</div>
+            <div>5</div>
+            <div>5</div>
+            <div>24</div>
+            <div>19</div>
+            <div>5</div>
         </div>
         
-        <div class="team">
-            <div class="rank">9.</div>
-            <div class="name">Brest</div>
-            <div class="points">47 pts</div>
+        <div class="row ">
+            <div class="pos">9</div>
+            <div class="team">Monaco</div>
+            <div>23</div>
+            <div>16</div>
+            <div>7</div>
+            <div>2</div>
+            <div>7</div>
+            <div>26</div>
+            <div>27</div>
+            <div>-1</div>
         </div>
         
-        <div class="team">
-            <div class="rank">10.</div>
-            <div class="name">Auxerre</div>
-            <div class="points">41 pts</div>
+        <div class="row ">
+            <div class="pos">10</div>
+            <div class="team">Angers</div>
+            <div>22</div>
+            <div>16</div>
+            <div>6</div>
+            <div>4</div>
+            <div>6</div>
+            <div>17</div>
+            <div>18</div>
+            <div>-1</div>
         </div>
         
-        <div class="team">
-            <div class="rank">11.</div>
-            <div class="name">Rennes</div>
-            <div class="points">38 pts</div>
+        <div class="row ">
+            <div class="pos">11</div>
+            <div class="team">Brest</div>
+            <div>19</div>
+            <div>16</div>
+            <div>5</div>
+            <div>4</div>
+            <div>7</div>
+            <div>21</div>
+            <div>27</div>
+            <div>-6</div>
         </div>
         
-        <div class="team">
-            <div class="rank">12.</div>
-            <div class="name">Toulouse</div>
-            <div class="points">38 pts</div>
+        <div class="row ">
+            <div class="pos">12</div>
+            <div class="team">Lorient</div>
+            <div>18</div>
+            <div>16</div>
+            <div>4</div>
+            <div>6</div>
+            <div>6</div>
+            <div>19</div>
+            <div>28</div>
+            <div>-9</div>
         </div>
         
-        <div class="team">
-            <div class="rank">13.</div>
-            <div class="name">Reims</div>
-            <div class="points">33 pts</div>
+        <div class="row ">
+            <div class="pos">13</div>
+            <div class="team">Nice</div>
+            <div>17</div>
+            <div>16</div>
+            <div>5</div>
+            <div>2</div>
+            <div>9</div>
+            <div>19</div>
+            <div>29</div>
+            <div>-10</div>
         </div>
         
-        <div class="team">
-            <div class="rank">14.</div>
-            <div class="name">Angers</div>
-            <div class="points">33 pts</div>
+        <div class="row ">
+            <div class="pos">14</div>
+            <div class="team">Paris FC</div>
+            <div>16</div>
+            <div>16</div>
+            <div>4</div>
+            <div>4</div>
+            <div>8</div>
+            <div>21</div>
+            <div>29</div>
+            <div>-8</div>
         </div>
         
-        <div class="team">
-            <div class="rank">15.</div>
-            <div class="name">Nantes</div>
-            <div class="points">32 pts</div>
+        <div class="row ">
+            <div class="pos">15</div>
+            <div class="team">Le Havre</div>
+            <div>15</div>
+            <div>16</div>
+            <div>3</div>
+            <div>6</div>
+            <div>7</div>
+            <div>13</div>
+            <div>22</div>
+            <div>-9</div>
         </div>
         
-        <div class="team">
-            <div class="rank">16.</div>
-            <div class="name">Le Havre</div>
-            <div class="points">31 pts</div>
+        <div class="row top-zone9">
+            <div class="pos">16</div>
+            <div class="team">Auxerre</div>
+            <div>12</div>
+            <div>16</div>
+            <div>3</div>
+            <div>3</div>
+            <div>10</div>
+            <div>14</div>
+            <div>25</div>
+            <div>-11</div>
         </div>
         
-        <div class="team">
-            <div class="rank">17.</div>
-            <div class="name">Saint-Etienne</div>
-            <div class="points">27 pts</div>
+        <div class="row top-zone10">
+            <div class="pos">17</div>
+            <div class="team">Nantes</div>
+            <div>11</div>
+            <div>16</div>
+            <div>2</div>
+            <div>5</div>
+            <div>9</div>
+            <div>14</div>
+            <div>28</div>
+            <div>-14</div>
         </div>
         
-        <div class="team">
-            <div class="rank">18.</div>
-            <div class="name">Montpellier</div>
-            <div class="points">16 pts</div>
+        <div class="row top-zone10">
+            <div class="pos">18</div>
+            <div class="team">Metz</div>
+            <div>11</div>
+            <div>16</div>
+            <div>3</div>
+            <div>2</div>
+            <div>11</div>
+            <div>17</div>
+            <div>37</div>
+            <div>-20</div>
         </div>
         
     </body>
