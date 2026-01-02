@@ -9,30 +9,32 @@
         h1 {
         text-align: center;
         margin-bottom: 30px;
-        color: #4caf50;
+        color: #155DFC;
         }
     
         /* Conteneur pour afficher plusieurs championnats côte à côte */
         .champ-container {
             display: grid;
-            grid-template-columns: repeat(6, minmax(300px, 1fr));
+            grid-template-columns: repeat(5, minmax(300px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
 
     
         .match-block {
-            background: #FDF4FF;
+            background: #F8FAFC;
             padding: 15px;
             border-radius: 8px;
-            border-left: 5px solid #4caf50;
+            border-left: 5px solid #155DFC;
+            text-align: center;
         }
         
         .champ {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 8px;
-            color: #4caf50;
+            color: #155DFC;
+            text-align: center;
         }
         
         .match-line {
@@ -50,10 +52,35 @@
             color: #E7180B;
         }
         
-        .stade {
+        
+        .btn-link {
+            display: inline-block;
+            background: #FB2C36;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
             font-size: 14px;
-            color: #bbb;
-            margin-bottom: 10px;
+            margin: 10px 0 15px 0;
+            text-align: center;
+        }
+        .btn-link:hover {
+            background: #C11007;
+        }
+
+        .btn-link2 {
+            display: inline-block;
+            background: #74D4FF;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 10px;
+            margin: 6px 0 9px 0;
+            text-align: center;
+        }
+        .btn-link2:hover {
+            background: #C11007;
         }
     
     </style>
@@ -64,65 +91,105 @@
     
     <div class="champ-container">
     
-        <div class="match-block">
-            <div class="champ">La Liga</div>
+                <div class="match-block">
+                    <div class="champ">La Liga</div>
         
+                    <a href="Liga.html" class="btn-link">Classement</a>
+                
             <div class="match-line">
                 <span class="heure">21:00</span>
-                <span class="teams">Rayo Vallecano <strong>vs</strong> Getafe</span>
+                <span class="teams">Rayo Vallecano <strong>vs</strong> Getafe </span>
+            </div>    
+            <div class="links-container">    
+                <a href="resultats_Rayo Vallecano.html" class="btn-link2">Stats dom</a>
+                <a href="comparatif_Rayo Vallecano_Getafe.html" class="btn-link2">face à face</a>
+                <a href="resultats_Getafe.html" class="btn-link2">Stats ext</a>
             </div>
-            <div class="stade">Campo de Futbol de Vallecas</div>
             </div>
-        <div class="match-block">
-            <div class="champ">Segunda Division</div>
+                <div class="match-block">
+                    <div class="champ">Segunda Division</div>
         
+                    <a href="Ligue1.html" class="btn-link">Classement</a>
+                
             <div class="match-line">
                 <span class="heure">20:30</span>
-                <span class="teams">Eibar <strong>vs</strong> CD Mirandes</span>
+                <span class="teams">Eibar <strong>vs</strong> CD Mirandes </span>
+            </div>    
+            <div class="links-container">    
+                <a href="resultats_Eibar.html" class="btn-link2">Stats dom</a>
+                <a href="comparatif_Eibar_CD Mirandes.html" class="btn-link2">face à face</a>
+                <a href="resultats_CD Mirandes.html" class="btn-link2">Stats ext</a>
             </div>
-            <div class="stade">Estadio Municipal de Ipurua</div>
             </div>
-        <div class="match-block">
-            <div class="champ">Serie A</div>
+                <div class="match-block">
+                    <div class="champ">Serie A</div>
         
+                    <a href="SerieA.html" class="btn-link">Classement</a>
+                
             <div class="match-line">
                 <span class="heure">20:45</span>
-                <span class="teams">Cagliari <strong>vs</strong> Milan</span>
+                <span class="teams">Cagliari <strong>vs</strong> Milan </span>
+            </div>    
+            <div class="links-container">    
+                <a href="resultats_Cagliari.html" class="btn-link2">Stats dom</a>
+                <a href="comparatif_Cagliari_Milan.html" class="btn-link2">face à face</a>
+                <a href="resultats_Milan.html" class="btn-link2">Stats ext</a>
             </div>
-            <div class="stade">Unipol Domus</div>
             </div>
-        <div class="match-block">
-            <div class="champ">Ligue 1</div>
+                <div class="match-block">
+                    <div class="champ">Ligue 1</div>
         
+                    <a href="Ligue1.html" class="btn-link">Classement</a>
+                
             <div class="match-line">
                 <span class="heure">20:45</span>
-                <span class="teams">Toulouse <strong>vs</strong> Lens</span>
+                <span class="teams">Toulouse <strong>vs</strong> Lens </span>
+            </div>    
+            <div class="links-container">    
+                <a href="resultats_Toulouse.html" class="btn-link2">Stats dom</a>
+                <a href="comparatif_Toulouse_Lens.html" class="btn-link2">face à face</a>
+                <a href="resultats_Lens.html" class="btn-link2">Stats ext</a>
             </div>
-            <div class="stade">Stadium de Toulouse</div>
             </div>
-        <div class="match-block">
-            <div class="champ">A-League Men</div>
+                <div class="match-block">
+                    <div class="champ">A-League Men</div>
         
+                    <a href="aleague.html" class="btn-link">Classement</a>
+                
             <div class="match-line">
                 <span class="heure">19:35</span>
-                <span class="teams">Melb Victory <strong>vs</strong> Perth Glory</span>
+                <span class="teams">Melb Victory <strong>vs</strong> Perth Glory </span>
+            </div>    
+            <div class="links-container">    
+                <a href="resultats_Melb Victory.html" class="btn-link2">Stats dom</a>
+                <a href="comparatif_Melb Victory_Perth Glory.html" class="btn-link2">face à face</a>
+                <a href="resultats_Perth Glory.html" class="btn-link2">Stats ext</a>
             </div>
-            <div class="stade">AAMI Park</div>
             </div>
-        <div class="match-block">
-            <div class="champ">Primeira Liga</div>
+                <div class="match-block">
+                    <div class="champ">Primeira Liga</div>
         
+                    <a href="primiraliga.html" class="btn-link">Classement</a>
+                
             <div class="match-line">
                 <span class="heure">18:45</span>
-                <span class="teams">Gil Vicente FC <strong>vs</strong> Sporting CP</span>
+                <span class="teams">Gil Vicente FC <strong>vs</strong> Sporting CP </span>
+            </div>    
+            <div class="links-container">    
+                <a href="resultats_Gil Vicente FC.html" class="btn-link2">Stats dom</a>
+                <a href="comparatif_Gil Vicente FC_Sporting CP.html" class="btn-link2">face à face</a>
+                <a href="resultats_Sporting CP.html" class="btn-link2">Stats ext</a>
             </div>
-            <div class="stade">Estadio Cidade de Barcelos</div>
             
             <div class="match-line">
                 <span class="heure">20:45</span>
-                <span class="teams">Vitoria <strong>vs</strong> Nacional</span>
+                <span class="teams">Vitoria <strong>vs</strong> Nacional </span>
+            </div>    
+            <div class="links-container">    
+                <a href="resultats_Vitoria.html" class="btn-link2">Stats dom</a>
+                <a href="comparatif_Vitoria_Nacional.html" class="btn-link2">face à face</a>
+                <a href="resultats_Nacional.html" class="btn-link2">Stats ext</a>
             </div>
-            <div class="stade">Estadio Dom Afonso Henriques</div>
             </div>
     </div> <!-- fin champ-container -->
     
